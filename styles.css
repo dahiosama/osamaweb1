@@ -1,0 +1,31 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #080c18;
+    background-image: radial-gradient(#2563ff10 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+.font-display { font-family: 'Plus Jakarta Sans', sans-serif; }
+.glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-card:hover {
+    background: rgba(37, 99, 255, 0.08);
+    border-color: rgba(37, 99, 255, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(37, 99, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+    @keyframes glow-pulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 0.8; }
+    }
+    .animate-glow-pulse {
+      animation: glow-pulse 4s ease-in-out infinite;
+    }
+    .glass-effect {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
